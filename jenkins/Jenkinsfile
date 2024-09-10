@@ -2,7 +2,9 @@ pipeline {
     agent any
     stages {
         stage('ofir stage'){
+            steps{
             echo "ofir is here"
+            }
         }
         stage('Build') {
             steps {
