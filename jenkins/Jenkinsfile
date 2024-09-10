@@ -1,6 +1,9 @@
 pipeline {
     agent any
     stages {
+        stage('ofir stage'){
+            echo "ofir is here"
+        }
         stage('Build') {
             steps {
                 sh 'mvn -B -DskipTests clean package'
